@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+  font-family: 'UnifrakturCook', cursive;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 3s ease-in-out infinite;
+}
+
+.birthday__wrapper {
+  text-align: center;
+  animation: pulse 5s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.highlight {
+  color: #d72638;
+  text-shadow: 0 0 20px #d72638;
+}
+
+h2, h3 {
+  color: #c1c1c1;
+  margin: 10px 0;
+}
+
+.cake {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background: url('_arlecchino____icon__-removebg-preview.png') no-repeat center;
+  background-size: contain;
+  animation: bounce 2s ease infinite;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
